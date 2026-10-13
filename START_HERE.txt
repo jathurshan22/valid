@@ -1,0 +1,48 @@
+VALID - FULL WORKING APP
+========================
+
+Your Firebase project is already created: valid-document-reminder-2026
+Authentication and Firestore are already enabled.
+
+FIRST RUN ON YOUR WINDOWS PC
+----------------------------
+1. Extract this project.
+2. Open the project folder.
+3. Double-click SETUP_AND_RUN.bat
+
+The script will:
+- run flutter pub get
+- run FlutterFire configure for your Firebase project
+- generate the real lib/firebase_options.dart for your Firebase account
+- clean dependencies
+- start the app
+
+If FlutterFire asks for platforms, select Android for your Android app.
+
+MANUAL COMMAND (if needed)
+--------------------------
+"%LOCALAPPDATA%\Pub\Cache\bin\flutterfire.bat" configure --project=valid-document-reminder-2026
+flutter clean
+flutter pub get
+flutter run
+
+IMPORTANT
+---------
+The included firebase_options.dart contains a placeholder API key because the real key was generated on your PC after the original ZIP was uploaded. Running FlutterFire configure replaces it automatically.
+
+Core features included:
+- Register / login / forgot password / logout
+- Persistent Firebase login
+- Firestore user profile + settings
+- Add / edit / renew / delete documents
+- Cloud document reload after app restart
+- Search and filters
+- Automatic expiry status
+- Local scheduled expiry reminders
+- Notification test + permission
+- Profile edit
+- Cloud sync refresh
+- Support message storage
+- Per-user Firestore security rules
+
+Document photos are local-only in this build. Firebase Cloud Storage is not required for the rest of the app.
